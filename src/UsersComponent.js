@@ -6,8 +6,11 @@ const UsersComponent = () => {
     
     
     const usersList = users.map((user) => {
-        return  <li>{user}</li>
+        return  <li key={user}>{user}</li>
     })
     return <ul>{usersList}</ul>
+
+
+  
 }
 export default UsersComponent;
